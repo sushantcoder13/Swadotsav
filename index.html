@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swadotsav - Food Festival Extravaganza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">Swadotsav</h1>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#food-stalls">Food Stalls</a></li>
+                    <li><a href="#gift-hampers">Gift Hampers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with JS Slider -->
+    <section id="home" class="hero">
+        <div class="slider-container">
+            <div class="slider">
+                <img src="https://via.placeholder.com/1200x600/FF6B35/FFFFFF?text=Swadotsav+Food+Festival" alt="Hero Image 1: Vibrant Food Festival" class="slide active">
+                <img src="https://via.placeholder.com/1200x600/4ECDC4/FFFFFF?text=Delicious+Food+Stalls" alt="Hero Image 2: Food Stalls" class="slide">
+                <img src="https://via.placeholder.com/1200x600/45B7D1/FFFFFF?text=Gift+Hampers+Await" alt="Hero Image 3: Gift Hampers" class="slide">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+        <div class="hero-content">
+            <h2>Welcome to Swadotsav</h2>
+            <p>Join us for a tantalizing food festival from 15-17 March 2024! Indulge in diverse food stalls and exclusive gift hampers.</p>
+            <a href="#food-stalls" class="cta-button">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Food Stalls Section -->
+    <section id="food-stalls" class="section">
+        <h2>Food Stalls</h2>
+        <p class="section-desc">Discover mouth-watering delights from around the world at our vibrant stalls.</p>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x300/FF6B35/FFFFFF?text=Indian+Cuisine+Stall" alt="Indian Cuisine Stall - Dummy: Spicy curries and naan bread">
+                <h3>Indian Delights</h3>
+                <p>Savor authentic biryanis, chaats, and sweets.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x300/4ECDC4/FFFFFF?text=Street+Food+Stall" alt="Street Food Stall - Dummy: Vendors with pani puri and vada pav">
+                <h3>Street Food Corner</h3>
+                <p>Quick bites like pani puri, vada pav, and more.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x300/45B7D1/FFFFFF?text=Continental+Grill" alt="Continental Grill Stall - Dummy: Grilled meats and salads">
+                <h3>Continental Grill</h3>
+                <p>Juicy grills, pastas, and fresh salads.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x300/F7DC6F/FFFFFF?text=Dessert+Zone" alt="Dessert Zone Stall - Dummy: Colorful cakes and ice creams">
+                <h3>Dessert Zone</h3>
+                <p>Indulge in cakes, ice creams, and fusion sweets.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Hampers Section -->
+    <section id="gift-hampers" class="section">
+        <h2>Gift Hampers</h2>
+        <p class="section-desc">Take home the flavors with our premium gift hampers – perfect for gifting or personal indulgence.</p>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x300/9B59B6/FFFFFF?text=Gourmet+Indian+Hamper" alt="Gourmet Indian Hamper - Dummy: Basket with spices, teas, and snacks">
+                <h3>Gourmet Indian Hamper</h3>
+                <p>Spices, teas, and traditional snacks in a festive basket.</p>
+                <span class="price">₹499</span>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x300/E74C3C/FFFFFF?text=Chocolate+Lovers+Set" alt="Chocolate Lovers Set - Dummy: Box of assorted chocolates and truffles">
+                <h3>Chocolate Lovers Set</h3>
+                <p>Assorted chocolates and truffles for sweet tooths.</p>
+                <span class="price">₹299</span>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x300/2ECC71/FFFFFF?text=Healthy+Snacks+Hamper" alt="Healthy Snacks Hamper - Dummy: Nuts, dried fruits, and herbal teas">
+                <h3>Healthy Snacks Hamper</h3>
+                <p>Nuts, dried fruits, and herbal teas for wellness.</p>
+                <span class="price">₹399</span>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x300/3498DB/FFFFFF?text=Luxury+Tea+Collection" alt="Luxury Tea Collection - Dummy: Elegant box with exotic teas and cookies">
+                <h3>Luxury Tea Collection</h3>
+                <p>Exotic teas paired with gourmet cookies.</p>
+                <span class="price">₹599</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p class="section-desc">Have questions? Reach out for stall bookings or hamper orders.</p>
+        <form id="contact-form" class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Swadotsav. All rights reserved. | Event Date: 15-17 March 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
